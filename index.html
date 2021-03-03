@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Convención PH 2021</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/WebGL-test.json", {onProgress: UnityProgress});
+      window.onload = setWindowHeightAndWidth;
+      function setWindowHeightAndWidth() {
+        var windowHeight = document.documentElement.clientHeight;
+        var windowWidth = document.documentElement.clientWidth;
+        document.getElementById("#canvas").style.height =  (windowHeight-105)  + "px";
+        document.getElementById("#canvas").style.width = (windowWidth-40) + "px";
+      }
+    </script>
+  </head>
+  <body>
+    <div id="unityContainer" >
+      <div id="carga"></div>
+        <canvas id="#canvas"></canvas>
+      </div>
+  
+      <script>
+        window.onload = function() {
+          var contenedor = document.getElementById('carga');
+        }
+      </script>
+  </body>
+</html>
