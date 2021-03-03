@@ -34,7 +34,7 @@ fill.animate(
     fill: "forwards"
   }
 );
-fillText.textContent = (value * 100).toFixed() +"%";
+fillText.textContent = "Loading: "+(value * 100).toFixed() +"%";
 }
 
 }
