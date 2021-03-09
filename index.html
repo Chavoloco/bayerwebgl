@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <script>
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/WebGL-final.json", {onProgress: UnityProgress});
       window.onload = setWindowHeightAndWidth;
@@ -19,23 +20,26 @@
       }
     </script>
   </head>
+
   <body>
-    <div id="custom-logo" hidden></div>
 
-    <div  id="custom-loader" hidden>
-    <div class="fill"></div>
-    <div class="label"></div>
-    </div>
-
-    <div id="unityContainer" >
-      <div id="carga"></div>
-        <canvas id="#canvas"></canvas>
+    <div class="grid-container">
+      <div id="custom-logo" hidden></div>
+      <div  id="custom-loader" hidden>
+      <div class="fill"></div>
+      <div class="label"></div>
       </div>
   
-      <script>
-        window.onload = function() {
-          var contenedor = document.getElementById('carga');
-        }
-      </script>
-  </body>
-</html>
+      <div id="unityContainer" >
+        <div id="carga"></div>
+          <canvas id="#canvas"></canvas>
+        </div>
+    
+        <script>
+          window.onload = function() {
+            var contenedor = document.getElementById('carga');
+          }
+        </script>
+    </body>
+  </html>      
+    </div>
