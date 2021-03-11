@@ -27,6 +27,7 @@ const fillText = unityInstance.progress.getElementsByClassName("label")[0];
 
 fill.animate(
   [
+    {width: fill.style.width},
     {width: (value * 100) +"%"}
   ],
   {
@@ -38,3 +39,4 @@ fillText.textContent = "Loading: "+(value * 100).toFixed() +"%";
 }
 
 }
+
